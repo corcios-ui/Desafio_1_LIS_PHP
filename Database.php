@@ -2,8 +2,8 @@
 class Database {
     private $host = 'localhost';
     private $db_name = 'finanzas_app';
-    private $username = 'root'; // Cambiar si es necesario
-    private $password = '1234567890';     // Cambiar si es necesario
+    private $username = 'root'; 
+    private $password = '1234567890';   
     private $conn;
 
     public function conectar() {

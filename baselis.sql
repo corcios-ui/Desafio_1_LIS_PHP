@@ -19,6 +19,27 @@
 CREATE DATABASE IF NOT EXISTS `finanzas_app` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci */;
 USE `finanzas_app`;
 
+-- Volcando estructura para tabla finanzas_app.usuarios
+CREATE TABLE IF NOT EXISTS `usuarios` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `usuario` varchar(50) NOT NULL,
+  `contrasena` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `usuario` (`usuario`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Volcando datos para la tabla finanzas_app.usuarios: ~2 rows (aproximadamente)
+INSERT INTO `usuarios` (`id`, `usuario`, `contrasena`) VALUES
+	(1, 'jose', '$2y$12$Rp4xvkaemyQxUtRFZ1eSyu1mLGTgK42Ck66rtAfMSLpoJDaH0b.xe'),
+	(2, 'admin', '$2y$12$J.ymtL455neatkUfLTf18eshPO5NSvfo7yOiQUvX0pzDMHjOb3KrG');
+
+/*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;
+
+
 -- Volcando estructura para tabla finanzas_app.entradas
 CREATE TABLE IF NOT EXISTS `entradas` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -49,22 +70,3 @@ CREATE TABLE IF NOT EXISTS `salidas` (
 
 -- Volcando datos para la tabla finanzas_app.salidas: ~0 rows (aproximadamente)
 
--- Volcando estructura para tabla finanzas_app.usuarios
-CREATE TABLE IF NOT EXISTS `usuarios` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `usuario` varchar(50) NOT NULL,
-  `contrasena` varchar(255) NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `usuario` (`usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- Volcando datos para la tabla finanzas_app.usuarios: ~2 rows (aproximadamente)
-INSERT INTO `usuarios` (`id`, `usuario`, `contrasena`) VALUES
-	(1, 'jose', '$2y$12$Rp4xvkaemyQxUtRFZ1eSyu1mLGTgK42Ck66rtAfMSLpoJDaH0b.xe'),
-	(2, 'admin', '$2y$12$J.ymtL455neatkUfLTf18eshPO5NSvfo7yOiQUvX0pzDMHjOb3KrG');
-
-/*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
-/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

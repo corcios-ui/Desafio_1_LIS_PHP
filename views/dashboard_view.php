@@ -14,7 +14,7 @@
         <a class="navbar-brand" href="#">Finanzas App</a>
         <div class="d-flex">
             <span class="navbar-text text-white me-3">Hola, <?= htmlspecialchars($usuario) ?>!</span>
-            <a href="../logout.php" class="btn btn-outline-light">Cerrar sesión</a>
+            <a href="../index.php" class="btn btn-outline-light">Cerrar sesión</a>
         </div>
     </div>
 </nav>

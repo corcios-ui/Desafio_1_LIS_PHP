@@ -1,5 +1,10 @@
 # Finanzas App 💰
 
+# Integrantes ⭐:
+
+Jose valentin corcios Segovia Cs232913
+Fernando Samuel Quijada Arévalo QA190088
+
 ## 📁 Estructura del proyecto
 
 ```

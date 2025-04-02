@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (!is_dir($target_dir)) mkdir($target_dir);
         $factura_imagen = $target_dir . time() . '_' . basename($_FILES['factura']['name']);
         move_uploaded_file($_FILES['factura']['tmp_name'], $factura_imagen);
-        $factura_imagen = str_replace('../', '', $factura_imagen); // ruta relativa
+        $factura_imagen = str_replace('../', '', $factura_imagen); 
     }
 
     $db = new Database();
