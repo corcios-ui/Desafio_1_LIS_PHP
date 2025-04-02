@@ -1,9 +1,5 @@
 # Finanzas App 💰
 
-Aplicación web para el control de finanzas personales o de negocios pequeños. Permite registrar entradas, salidas, visualizar el balance mensual y generar reportes en PDF.
-
----
-
 ## 📁 Estructura del proyecto
 
 ```
@@ -50,3 +46,16 @@ Y accedé desde tu navegador a:
 ```
 http://localhost:8000
 ```
+
+## Login
+
+![image](https://github.com/user-attachments/assets/75aeca08-5484-449e-a94c-36c86e9a7c8a)
+
+## Menu
+
+![image](https://github.com/user-attachments/assets/5d405127-b7a9-41ae-9f1d-490b4b5e1d57)
+
+## Reporte
+
+![image](https://github.com/user-attachments/assets/7254b31a-ca00-4625-8afc-aa1743a8fb4e)
+
